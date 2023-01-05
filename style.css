@@ -1,0 +1,79 @@
+html, body {
+  font-family: Verdana, sans-serif;
+  padding: 0px;
+  background: #f1f1f1;
+}
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+  margin-left: 150px;
+}
+#navUl {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 15%;
+  height: 100%;
+  position: fixed;
+  overflow: auto;
+  background-color: #f1f1f1;
+}
+#navLi {
+  text-align: center;
+}
+#navLi a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+#navLi a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+#navLi a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+#navLi:last-child {
+  border-bottom: none;
+}
+.column {   
+  float: left;
+  margin-left: 15%;
+  width: 85%;
+}
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+  margin-left: 15%;
+  width: 85%;
+}
+@media screen and (max-width: 800px) {
+  #navUl {   
+    width: 25%;
+    padding: 0;
+  }
+  .column{
+    margin-left: 25%;
+    width: 75%;
+  }
+  .footer {
+    margin-left: 25%;
+    width: 75%;
+  }
+}
